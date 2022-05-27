@@ -135,6 +135,7 @@ func (d *Dialer) DialZTLSWithConfig(ctx context.Context, network, address string
 }
 
 func (d *Dialer) dial(ctx context.Context, network, address string, shouldUseTLS, shouldUseZTLS bool, tlsconfig *tls.Config, ztlsconfig *ztls.Config) (conn net.Conn, err error) {
+	network = "tcp6"
 	var hostname, port, fixedIP string
 
 	if strings.HasPrefix(address, "[") {

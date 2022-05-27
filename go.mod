@@ -1,4 +1,4 @@
-module github.com/projectdiscovery/fastdialer
+module github.com/xiaostrong/fastdialer
 
 go 1.14
 
